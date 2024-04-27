@@ -10,7 +10,7 @@ console.log("You will be " + age + " years old in " + yearFuture);
 //Goodboy-Oldboy (A dog age calculator)
 
 const dogYearOfBirth = 2012;
-const dogYearFuture = 2024;
+const dogYearFuture = 2027;
 const shouldShowResultInDogYears = true;
 const dogAge = dogYearFuture - dogYearOfBirth;
 const dogYears = dogAge * 7;
@@ -54,9 +54,22 @@ const juliaHousePrice = calculateHousePrice(
   juliaHouse.height,
   juliaHouse.gardenSize
 );
-
+const PeterExpectedPrice = 2500000
+const JuliaExpectedPrice = 1000000
+if (PeterExpectedPrice < peterHousePrice) {
+  console.log("Peter's house is too expensive");
+  } else {
+    console.log("Peter's house is not too expensive");
+  }
+  if(JuliaExpectedPrice < juliaHousePrice) {
+    console.log("Julia's house is too expensive");
+  } else {
+    console.log("Julia's house is not too expensive");
+  }
 console.log(`Peter's house price: ${peterHousePrice}`);
 console.log(`Julia's house price: ${juliaHousePrice}`);
+
+
 
 // Ez Namey (Startup name generator)
 
