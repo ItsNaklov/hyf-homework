@@ -9,16 +9,16 @@ console.log("You will be " + age + " years old in " + yearFuture);
 
 //Goodboy-Oldboy (A dog age calculator)
 
-const dogYearOfBirth = 2012;
+const dogYearOfBirth = 2010;
 const dogYearFuture = 2027;
 const shouldShowResultInDogYears = true;
-const dogAge = dogYearFuture - dogYearOfBirth;
-const dogYears = dogAge * 7;
+const humanYears = dogYearFuture - dogYearOfBirth;
+const dogYears = humanYears * 7;
 
 if (shouldShowResultInDogYears) {
   console.log(`Your dog will be ${dogYears} dog years old in ${dogYearFuture}`);
 } else {
-  console.log(`Your dog will be ${dogAge} human years old in ${dogYearFuture}`);
+  console.log(`Your dog will be ${humanYears} human years old in ${dogYearFuture}`);
 }
 
 //Housey pricey (A house price estimator)
