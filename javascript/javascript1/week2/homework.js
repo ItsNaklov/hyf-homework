@@ -1,8 +1,17 @@
-// Flight booking fullname function
-function getFullname(firstname, surname) {
-return firstname + " " + surname;
+// Flight booking fullname function and Formal fullname
+function getFullname(firstname, surname, useFormalName, gender) {
+  if (useFormalName) {
+    if (gender === "female") {
+      return "Queen " + firstname + " " + surname;
+    } else {
+      return "Lord " + firstname + " " + surname;
+    }
+  } else {
+    return firstname + " " + surname;
+  }
 }
-getFullname("Benjamin", "Hughes"); // returns "Benjamin Hughes"
-const fullname1 = getFullname("Benjamin", "Hughes");
-const fullname2 = getFullname("Benjamin", "Lazy",);
-console.log (fullname1, fullname2);
+
+getFullname("Benjamin", "bigfoot");
+const fullname1 = getFullname("Benjamin", "bigfoot", true, "male");
+const fullname2 = getFullname("Karen", "tinyhands", true, "female");
+console.log(fullname1, fullname2);
